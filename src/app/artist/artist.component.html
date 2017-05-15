@@ -1,0 +1,5 @@
+<div *ngFor="let album of albums ">
+<h3>{{album.name}}</h3>
+    <img src="{{album.images[1].url }}" class="img-responsive" 
+    		  [routerLink]="['/albums', album.id]">
+</div>

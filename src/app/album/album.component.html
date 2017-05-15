@@ -1,0 +1,10 @@
+<div *ngFor="let album of albumTracks">
+	<h2>Album Title: {{album.name}}</h2>
+	<div *ngFor="let artist of album.artists">
+	<h3>Artist: {{artist.name}}</h3>
+
+	<p>
+      <audio controls src="{{ album.preview_url }}"></audio>
+	</p>
+	</div>
+</div>
